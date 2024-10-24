@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .custom-btn {
+    @apply py-2 sm:py-3 px-5 w-fit inline-flex justify-center items-center gap-2 rounded-full border border-transparent font-semibold bg-[#5D50C6] text-white hover:brightness-90 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm shadow shadow-[#5D50C6];
+  }
+
+  .custom-btn-two {
+    @apply py-2 sm:py-3 px-5 w-fit text-[#5D50C6] inline-flex justify-center items-center gap-2 rounded-full border border-slate-600 font-semibold hover:bg-[#5D50C6] hover:text-white hover:brightness-90 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm  shadow shadow-[#5D50C6];
+  }
+
+  .theme-text {
+    @apply text-[#F85E9F];
+  }
+
+  .common-padding {
+    @apply px-5 md:px-16;
+  }
+
+  .gradient {
+    @apply bg-gradient-to-r from-[#F85E9F] to-[#5D50C6];
+  }
+
+  .signin-background {
+    @apply py-16  bg-[url('https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover  bg-black/40 bg-blend-overlay;
+  }
+}
