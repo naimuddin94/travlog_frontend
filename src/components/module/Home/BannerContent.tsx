@@ -17,7 +17,7 @@ const BannerContent = () => {
         Explore Bangladesh!
         <MdCardTravel />
       </div>
-      <h1 className="text-4xl md:text-5xl font-extrabold text-slate-800">
+      <h1 className="text-4xl md:text-5xl font-extrabold text-slate-800 tracking-wide">
         Travel{" "}
         <span className="theme-text">
           top <br /> destination <br />

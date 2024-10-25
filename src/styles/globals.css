@@ -27,3 +27,30 @@
     @apply py-16  bg-[url('https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover  bg-black/40 bg-blend-overlay;
   }
 }
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-slow {
+  animation: spin-slow 5s linear infinite; /* Adjust the duration (3s) to your desired speed */
+}
+
+@keyframes bounce-slow {
+  0%,
+  100% {
+    transform: translateY(0); /* Start and end at the original position */
+  }
+  50% {
+    transform: translateY(-10px); /* Move up by 20px */
+  }
+}
+
+.bounce-slow {
+  animation: bounce-slow 4s ease-in-out infinite; /* Adjust 2s to control speed */
+}
